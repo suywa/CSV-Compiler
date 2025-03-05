@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Parser</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <input type="file" id="file">
+    <div id="error-message" style="color: red;"></div>
+    <div>
+        <label for="x-field">X-Axis:</label>
+        <select id="x-field"></select>
+        
+        <label for="y-field">Y-Axis:</label>
+        <select id="y-field"></select>
+    </div>
+    <div id="product-sales"></div>
+    <div id="customer-purchases"></div>
+    <canvas id="chart" width="400" height="200"></canvas>
+    <table id="table"></table>
+    <script src="app.js"></script>
+</body>
+</html>
